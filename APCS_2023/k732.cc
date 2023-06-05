@@ -6,6 +6,8 @@ struct Point {
   int x, y;
 };
 
+// O(n^2m^2)
+
 vector<Point> special_point;
 int main() {
   ios::sync_with_stdio(false);
