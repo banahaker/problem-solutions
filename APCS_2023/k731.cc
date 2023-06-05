@@ -16,17 +16,7 @@ int main() {
   cin >> n;
   for (int i = 1; i <= n; i++) {
     cin >> cur.x >> cur.y;
-    if (d == 0) {
-      if (cur.x - last.x > 0) {
-        d = 1;
-      } else if (cur.x - last.x < 0) {
-        d = -1;
-      } else if (cur.y - last.y > 0) {
-        d = 2;
-      } else {
-        d = -2;
-      }
-    } else if (cur.x - last.x > 0) {
+    if (cur.x - last.x > 0) {
       if (d == -1) {
         re_turn++;
       } else if (d == 2) {
